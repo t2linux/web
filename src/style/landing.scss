@@ -15,6 +15,13 @@ main {
     padding: 0;
     overflow: hidden;
     position: fixed;
+    font-size: x-large;
+
+    img {
+        height: 7rem;
+        border-radius: .2rem;
+        margin: 1.5rem;
+    }
 
     > li {
         float: left;
@@ -23,7 +30,7 @@ main {
             display: block;
             color: $white;
             text-align: center;
-            padding: 14px 16px;
+            padding: 3.5rem 1rem 1rem;
             text-decoration: none;
 
             &:hover:not(.primary) {
