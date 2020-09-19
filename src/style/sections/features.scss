@@ -10,19 +10,6 @@
 
     grid-template-columns: 50% 50%;
     grid-template-rows: 5% 30% 30% 30% 5%;
-
-    > footer {
-        width: calc(100% - 2vw);
-        padding: 1vw;
-
-        color: $primary;
-
-        background: darken($white, $hover / 3);
-
-        position: absolute;
-
-        bottom: -72vh;
-    }
 }
 
 .card {
@@ -34,9 +21,14 @@
     align-self: center;
 
     > img {
-        height: 10vw;
+        height: 8vmin;
         align-self: center;
         justify-self: center;
+    }
+
+    > p { 
+        align-self: center;
+        font-size: 2.5vmin;
     }
 
     &.left {
