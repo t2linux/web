@@ -18,6 +18,10 @@ section {
 
     border-left: 1px solid $primary;
     font-size: 2.3vmax;
+
+    > h1 {
+        text-shadow: 3px 4px 20px rgba(0, 0, 0, .5);
+    }
 }
 
 #nav {
