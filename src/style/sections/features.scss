@@ -15,13 +15,13 @@
 .card {
     width: 80%;
 
-    color: darken($white, $hover * 2);
+    color: darken($white, $hover * 3);
 
     display: grid;
     align-self: center;
 
     > img {
-        height: 8vmin;
+        height: 12vmin;
         align-self: center;
         justify-self: center;
     }
@@ -29,6 +29,7 @@
     > p { 
         align-self: center;
         font-size: 2.5vmin;
+        font-weight: 300;
     }
 
     &.left {
