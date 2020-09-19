@@ -1,40 +1,14 @@
-main {
-    /* TODO: Add lower resolution version for mobile */
-
-    background-image: url("./assets/img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: center;
-
-    width: 100vw;
-    height: 100vh;
-}
-
-section {
-    position: fixed;
-
-    margin: 40vh 12vw;
-    padding-left: 2vw;
-
-    border-left: 1px solid $primary;
-    font-size: 2.3vmax;
-
-    > h1 {
-        text-shadow: 3px 4px 20px rgba(0, 0, 0, .5);
-    }
-}
-
 #nav {
     margin: 0;
-    padding: 3vmax  0 0 3vmax;
+    padding: 3vmax 0 0 3vmax;
 
-    width: 100vw;
+    width: calc(100% - 3vmax);
     height: 15vh;
 
     list-style-type: none;
 
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     font-size: 2.5vh;
 
     img {
