@@ -13,11 +13,11 @@
 #landing::after {
     content: "";
     position: absolute;
-    bottom: -90%;
+    bottom: -3vmax;
     left: 0;
     right: 0;
-    height: 100%;
-    background: $white;
+    height: 10%;
+    background-color: $white;
     transform: skew(0deg, -2deg);
 }
 

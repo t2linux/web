@@ -1,3 +1,18 @@
 #features {
     background-color: $white;
+
+    height: 60vh;
+
+    > footer {
+        width: calc(100% - 3vw);
+        padding: 1.5vw;
+
+        color: $primary;
+
+        background: darken($white, $hover / 2);
+
+        position: absolute;
+
+        bottom: -60vh;
+    }
 }
