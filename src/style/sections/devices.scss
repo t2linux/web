@@ -43,6 +43,7 @@
 
             > p {
                 font-size: 100%;
+
                 cursor: pointer;
             }
         }
@@ -61,7 +62,7 @@
         width: 100%;
 
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-        
+
         > .card {
             width: 90%;
 
@@ -70,4 +71,23 @@
             column-gap: 4vw;
         }
     }
+}
+
+#tooltip {
+    display: none;
+    position: absolute;
+
+    background-color: white;
+
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    padding: .7rem;
+
+    border-radius: .5rem;
+
+    -webkit-box-shadow: 0px 10px 47px 0px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 10px 47px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 10px 47px 0px rgba(0, 0, 0, 0.28);
 }

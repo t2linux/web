@@ -26,7 +26,18 @@ const meta = [
     }
 ];
 
-console.log("Pre Computing model features...")
+const tooltip = document.getElementById("tooltip");
+let tooltipShown = false;
+
+document.getElementById("devices").addEventListener("click", () => {
+    if(tooltipShown) {
+        tooltipShown = false;
+    } else {
+        tooltip.style.display = "none";
+    }
+});
+
+console.log("Pre Computing model features... ")
 console.time("Done")
 
 Array.from(document.getElementById("devices").childNodes).filter(card => card.nodeName == "DIV").forEach(card => {
@@ -51,6 +62,25 @@ Array.from(document.getElementById("devices").childNodes).filter(card => card.no
         features = features.sort(feature => hexToHue(feature.statusColor));
 
         model.addEventListener("click", event => {
+            if(features.length == 0) return;
+
+            tooltip.innerHTML = "";
+
+            features.forEach(feature => {
+                const line = document.createElement("p");
+                line.innerText = feature.name;
+                line.title = feature.statusName;
+                line.style.color = feature.statusColor;
+
+                tooltip.appendChild(line);
+            });
+
+            tooltip.style.left = (model.offsetLeft + getTextWidth(model)) + "px";
+            tooltip.style.top = (model.offsetTop) + "px";
+
+            tooltip.style.display = "block";
+            tooltipShown = true;
+
             console.log(features);
         });
     });
@@ -58,6 +88,13 @@ Array.from(document.getElementById("devices").childNodes).filter(card => card.no
 
 console.timeEnd("Done");
 
+function getTextWidth(element) { 
+    canvas = document.createElement("canvas"); 
+    context = canvas.getContext("2d"); 
+    context.font = element.font; 
+
+    return context.measureText(element.innerHTML).width; 
+} 
 
 function hexToHue(H) {
     let r = 0, g = 0, b = 0;
