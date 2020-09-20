@@ -1,5 +1,42 @@
 #devices {
-    background-color: $white;
+    display: grid;
 
     height: 70vh;
+
+    margin-top: 10vh;
+
+    grid-template-columns: 25% 25% 25% 25%;
+
+    > .card {
+        display: grid;
+
+        grid-template-columns: 30% 70%;
+
+        > img {
+            grid-column-start: 1;
+            grid-column-end: 2;
+
+            height: 10vh;
+        }
+
+        > article {
+            grid-column-start: 2;
+            grid-column-end: 3;
+
+            > h1 {
+                font-size: 2vw;
+            }
+
+            > p {
+                font-size: 1.4vw;
+            }
+        }
+
+        color: lighten(black, $hover);
+
+        &.macbooks {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
 }
