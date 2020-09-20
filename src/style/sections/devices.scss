@@ -77,15 +77,15 @@
     display: none;
     position: absolute;
 
-    background-color: white;
+    background-color: inherit;
 
     top: 0;
     left: 0;
     z-index: 2;
 
-    padding: .7rem;
+    padding: 0.7rem;
 
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 
     -webkit-box-shadow: 0px 10px 47px 0px rgba(0, 0, 0, 0.28);
     -moz-box-shadow: 0px 10px 47px 0px rgba(0, 0, 0, 0.28);
