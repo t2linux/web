@@ -4,9 +4,8 @@
     height: 70vh;
 
     margin-top: 15vh;
-    margin-bottom: 15vh;
 
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
     row-gap: 6vh;
 
@@ -39,7 +38,7 @@
             > h1 {
                 font-size: 150%;
 
-                margin-top: -.8vh;
+                margin-top: -0.8vh;
             }
 
             > p {
@@ -52,6 +51,22 @@
         &.macbooks {
             grid-column-start: 1;
             grid-column-end: 2;
+        }
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    #devices {
+        width: 100%;
+
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        
+        > .card {
+            width: 90%;
+
+            grid-template-columns: 35% 70%;
+
+            column-gap: 4vw;
         }
     }
 }
