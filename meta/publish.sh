@@ -14,5 +14,8 @@ rm ../dist/style.css.map
 # copy html
 cp ../src/*.html ../dist/
 
+# copy javascript
+cp ../src/*.js ../dist/
+
 # copy assets
 cp -r ../src/assets ../dist/assets
