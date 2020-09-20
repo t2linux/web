@@ -3,20 +3,33 @@
 
     height: 70vh;
 
-    margin-top: 10vh;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+    row-gap: 6vh;
 
     > .card {
         display: grid;
 
-        grid-template-columns: 30% 70%;
+        width: 100%;
+
+        grid-template-columns: 38% 40%;
+
+        column-gap: 2vw;
 
         > img {
             grid-column-start: 1;
             grid-column-end: 2;
 
-            height: 10vh;
+            justify-self: end;
+
+            width: 8vmax;
+
+            &.square {
+                height: 10vmax;
+            }
         }
 
         > article {
@@ -24,11 +37,13 @@
             grid-column-end: 3;
 
             > h1 {
-                font-size: 2vw;
+                font-size: 150%;
+
+                margin-top: -.8vh;
             }
 
             > p {
-                font-size: 1.4vw;
+                font-size: 100%;
             }
         }
 
