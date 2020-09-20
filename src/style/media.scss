@@ -1,0 +1,39 @@
+@media (prefers-color-scheme: dark) {
+    #devices {
+        > .card {
+            color: $white;
+        }
+
+        img {
+            -webkit-filter: invert(1);
+            filter: invert(1);
+        }
+    }
+
+    html,
+    body {
+        background: lighten(black, $hover);
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    #devices {
+        width: 100%;
+
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+
+        > .card {
+            width: 90%;
+
+            grid-template-columns: 32% 70%;
+
+            column-gap: 4vw;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #landing {
+        background-attachment: unset;
+    }
+}

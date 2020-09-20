@@ -57,22 +57,6 @@
     }
 }
 
-@media only screen and (max-width: 410px) {
-    #devices {
-        width: 100%;
-
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-
-        > .card {
-            width: 90%;
-
-            grid-template-columns: 32% 70%;
-
-            column-gap: 4vw;
-        }
-    }
-}
-
 #tooltip {
     display: none;
     position: absolute;
