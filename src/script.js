@@ -41,7 +41,7 @@ console.log("Pre Computing model features... ")
 console.time("Done")
 
 Array.from(document.getElementById("devices").childNodes).filter(card => card.nodeName == "DIV").forEach(card => {
-    card = card.getElementsByTagName("article")[0];
+    card = card.getElementsByTagName("div")[0];
     const device = card.getElementsByTagName("h1")[0].innerText;
 
     Array.from(card.getElementsByTagName("p")).forEach(model => {
