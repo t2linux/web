@@ -3,11 +3,30 @@
         > .card {
             color: $white;
         }
+    }
 
-        img {
-            -webkit-filter: invert(1);
-            filter: invert(1);
-        }
+    #macbook-air {
+        content: url("assets/img/dark/macbook-air.svg");
+    }
+
+    #macbook-pro {
+        content: url("assets/img/dark/macbook-pro.svg");
+    }
+
+    #imac {
+        content: url("assets/img/dark/imac.svg");
+    }
+
+    #imac-pro {
+        content: url("assets/img/dark/imac-pro.svg");
+    }
+
+    #mac-mini {
+        content: url("assets/img/dark/mac-mini.svg");
+    }
+
+    #mac-pro {
+        content: url("assets/img/dark/mac-pro.svg");
     }
 
     html,
