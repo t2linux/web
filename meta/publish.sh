@@ -3,8 +3,11 @@
 # ensure correct directory
 cd "$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )"
 
-# create dist
+# remove old dist
 rm -r ../dist
+rm ../dist.zip
+
+# create dist
 mkdir ../dist
 
 # compile style
@@ -22,3 +25,7 @@ cp -r ../src/assets ../dist/assets
 
 # copy other files
 cp ../src/dist/* ../dist/
+
+# create a zip
+cd ../dist
+zip -r ../dist.zip * > /dev/null
