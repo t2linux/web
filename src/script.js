@@ -93,26 +93,16 @@ Array.from(document.getElementById("devices").childNodes).filter(card => card.no
                 tooltip.appendChild(line);
             });
 
-            tooltip.style.left = (model.offsetLeft + getTextWidth(model)) + "px";
+            tooltip.style.left = (model.offsetLeft + model.offsetWidth + 10) + "px";
             tooltip.style.top = (model.offsetTop) + "px";
 
             tooltip.style.display = "block";
             tooltipShown = true;
-
-            console.log(features);
         });
     });
 });
 
 console.timeEnd("Done");
-
-function getTextWidth(element) { 
-    canvas = document.createElement("canvas"); 
-    context = canvas.getContext("2d"); 
-    context.font = element.font; 
-
-    return context.measureText(element.innerHTML).width; 
-} 
 
 function hexToHue(H) {
     let r = 0, g = 0, b = 0;
