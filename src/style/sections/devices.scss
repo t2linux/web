@@ -3,20 +3,20 @@
 
     height: 70vh;
 
-    margin-top: 15vh;
+    padding: 10vw 10vw 0 10vw;
 
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
-    row-gap: 6vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
     > .card {
         display: grid;
 
-        width: 100%;
+        grid-template-columns: 8vmax auto;
+        grid-template-rows: auto auto;
 
-        grid-template-columns: 38% 40%;
+        justify-self: start;
 
         column-gap: 2vw;
+        row-gap: 4vw;
 
         > img {
             grid-column-start: 1;
@@ -24,24 +24,28 @@
 
             justify-self: end;
 
-            width: 8vmax;
+            width: 80%;
 
             &.square {
-                height: 10vmax;
+                height: 7vmax;
             }
         }
 
-        > article {
+        > div {
             grid-column-start: 2;
             grid-column-end: 3;
 
             > h1 {
+                display: table;
+
                 font-size: 150%;
 
                 margin-top: -0.8vh;
             }
 
             > p {
+                display: table;
+
                 font-size: 100%;
 
                 cursor: pointer;
@@ -49,11 +53,6 @@
         }
 
         color: lighten(black, $hover);
-
-        &.macbooks {
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
     }
 }
 

@@ -8,7 +8,7 @@ const meta = [
                 "models": [
                     {
                         "device": "MacBook Pro",
-                        "model": "2018 13\" (4 x USB)"
+                        "model": "2018 13\" (4 x )"
                     }
                 ]
             },
