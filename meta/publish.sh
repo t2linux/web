@@ -19,3 +19,6 @@ cp ../src/*.js ../dist/
 
 # copy assets
 cp -r ../src/assets ../dist/assets
+
+# copy other files
+cp ../src/dist/* ../dist/
