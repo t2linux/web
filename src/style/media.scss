@@ -56,3 +56,9 @@
         background-attachment: unset;
     }
 }
+
+@-moz-document url-prefix() {
+    #devices > .card > img {
+        filter: invert(1);
+    }
+}
