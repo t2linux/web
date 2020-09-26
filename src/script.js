@@ -23,6 +23,16 @@ const meta = [
                 ]
             }
         ]
+    },
+    {
+        "name": "Suspend",
+        "status": [
+            {
+                "name": "Not working",
+                "color": "#e85f5f",
+                "models": ""
+            }
+        ]
     }
 ];
 
@@ -49,13 +59,21 @@ Array.from(document.getElementById("devices").childNodes).filter(card => card.no
 
         meta.forEach(feature => {
             feature.status.forEach(status => {
-                status.models.filter(metaModel => JSON.stringify(metaModel) == JSON.stringify({ device: device, model: model.innerText })).forEach(() => {
+                if(typeof status.models == "string") {
                     features.push({
                         name: feature.name,
                         statusName: status.name,
                         statusColor: status.color
                     });
-                });
+                } else {
+                    status.models.filter(metaModel => JSON.stringify(metaModel) == JSON.stringify({ device: device, model: model.innerText })).forEach(() => {
+                        features.push({
+                            name: feature.name,
+                            statusName: status.name,
+                            statusColor: status.color
+                        });
+                    });
+                }
             });
         });
 
