@@ -5,7 +5,7 @@
 
     padding: 10vw 10vw 0 10vw;
 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 
     > .card {
         display: grid;
