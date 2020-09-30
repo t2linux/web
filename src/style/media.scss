@@ -33,6 +33,12 @@
     body {
         background: lighten(black, $hover);
     }
+
+    @-moz-document url-prefix() {
+        #devices > .card > img {
+            filter: brightness(0) invert(1);
+        }
+    }    
 }
 
 @media only screen and (max-width: 410px) {
@@ -50,11 +56,5 @@
 @media (prefers-reduced-motion: reduce) {
     #landing {
         background-attachment: unset;
-    }
-}
-
-@-moz-document url-prefix() {
-    #devices > .card > img {
-        filter: brightness(0) invert(1);
     }
 }
