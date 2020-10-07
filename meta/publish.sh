@@ -1,31 +1,33 @@
 #!/bin/bash
 
 # ensure correct directory
-cd "$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )"
+dir="$( cd "$( dirname "$0" )" && cd .. && pwd )"
+
+echo "Using project root '$dir'"
 
 # remove old dist
-rm -r ../dist
-rm ../dist.zip
+rm -r $dir/dist
+rm $dir/dist.zip
 
 # create dist
-mkdir ../dist
+mkdir $dir/dist
 
 # compile style
-sass ../src/style/style.scss ../dist/style.css
-rm ../dist/style.css.map
+sass $dir/src/style/style.scss $dir/dist/style.css
+rm $dir/dist/style.css.map
 
 # copy html
-cp ../src/*.html ../dist/
+cp $dir/src/*.html $dir/dist/
 
 # copy javascript
-cp ../src/*.js ../dist/
+cp $dir/src/*.js $dir/dist/
 
 # copy assets
-cp -r ../src/assets ../dist/assets
+cp -r $dir/src/assets $dir/dist/assets
 
 # copy other files
-cp ../src/dist/* ../dist/
+cp $dir/src/dist/* $dir/dist/
 
 # create a zip
-cd ../dist
-zip -r ../dist.zip * > /dev/null
+cd $dir/dist
+zip -r $dir/dist.zip * > /dev/null
