@@ -5,7 +5,7 @@
 
     padding: 10vw 10vw 0 10vw;
 
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
 
     > .card {
         display: grid;
@@ -38,7 +38,7 @@
             > h1 {
                 display: table;
 
-                font-size: 150%;
+                font-size: 1.2rem;
 
                 margin-top: -0.8vh;
             }
@@ -46,7 +46,7 @@
             > p {
                 display: table;
 
-                font-size: 100%;
+                font-size: 1rem;
 
                 cursor: pointer;
             }
