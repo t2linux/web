@@ -1,3 +1,6 @@
+# Editor
+.vscode
+
 /dist
 dist.zip
 *.css
