@@ -1,6 +1,6 @@
 # Design concept
 
-- [Background (CC comparable)](https://www.pexels.com/photo/circuit-board-2182863/)
+- [Background (Unsplash Licence)](https://unsplash.com/photos/pfR18JNEMv8)
 - [Icons (CC-BY)](https://thenounproject.com/iconfield/collection/apple/)
 - Primary `#7663E8` 
 - Text `#F1F1F1`
