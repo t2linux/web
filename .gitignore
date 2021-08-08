@@ -1,6 +1,9 @@
 # Editor
 .vscode
 
+# Dependencies
+node_modules
+
 /dist
 dist.zip
 *.css
