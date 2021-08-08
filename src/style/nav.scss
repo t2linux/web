@@ -1,3 +1,5 @@
+@use "sass:math";
+
 #nav {
     background: linear-gradient(180deg, black, transparent);
 
@@ -35,7 +37,7 @@
             }
 
             &.primary:hover {
-                color: darken($primary, $hover / 10);
+                color: darken($primary, math.div($hover, 10));
             }
         }
 
