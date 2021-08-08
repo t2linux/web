@@ -1,0 +1,18 @@
+{
+    "name": "t2linux.org",
+    "version": "1.0.0",
+    "description": "t2linux.org website",
+    "scripts": {
+        "clean": "rm -r dist; mkdir dist",
+        "build": "npm run clean && sass src/style/style.scss dist/style.css && cp src/*.{html,js} dist && cp -r src/assets dist/assets && cp -r src/dist/* dist",
+        "watch": "sass src/style/style.scss src/style.css --watch & live-server src"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/t2linux/web.git"
+    },
+    "dependencies": {
+        "live-server": "^1.2.1",
+        "sass": "^1.37.5"
+    }
+}
