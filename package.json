@@ -4,7 +4,7 @@
     "description": "t2linux.org website",
     "scripts": {
         "clean": "rm -r dist; mkdir dist",
-        "build": "npm run clean && sass src/style/style.scss dist/style.css && cp src/*.{html,js} dist && cp -r src/assets dist/assets && cp -r src/dist/* dist",
+        "build": "npm run clean && sass src/style/style.scss dist/style.css && cp src/*.html dist && cp src/*.js dist && cp -r src/assets dist/assets && cp -r src/dist/* dist",
         "watch": "sass src/style/style.scss src/style.css --watch & live-server src"
     },
     "repository": {
