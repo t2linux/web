@@ -116,17 +116,17 @@
       </div>
     </div>
     <img
-      src="../assets/background/shapes/01.svg"
+      src="../assets/background/shapes/torus.png"
       class="Shape1 hidden md:block"
       alt=""
     />
     <img
-      src="../assets/background/shapes/02.svg"
+      src="../assets/background/shapes/cube.png"
       class="Shape2 hidden md:block"
       alt=""
     />
     <img
-      src="../assets/background/shapes/03.svg"
+      src="../assets/background/shapes/circle.png"
       class="Shape3 hidden md:block"
       alt=""
     />

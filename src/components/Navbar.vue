@@ -17,7 +17,7 @@
   >
     <div class="flex justify-between md:w-auto text-lg text-gray-700">
       <a href="/"
-        ><img src="../assets/icons/t2linux.jpg" class="h-10 max-w-none w-10" alt="t2linux icon"
+        ><img src="../assets/icons/t2linux.webp" class="h-10 max-w-none w-10" alt="t2linux icon"
       /></a>
 
       <button
