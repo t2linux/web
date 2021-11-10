@@ -53,7 +53,7 @@
           class="NavbarMobileItem text-neutral-200"
           v-for="item in arr"
           v-bind:key="item.index"
-          href="item.href"
+          :href="item.href"
           :target="
             item.href === '/' || item.href === '#Installation' ? '' : '_blank'
           "
