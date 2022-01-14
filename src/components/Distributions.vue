@@ -48,9 +48,9 @@ export default {
           href: "https://wiki.t2linux.org/distributions/ubuntu/home/",
         },
         {
-          src: "manjaro.svg",
-          name: "Manjaro",
-          href: "https://wiki.t2linux.org/distributions/manjaro/home/",
+          src: "fedora.svg",
+          name: "Fedora",
+          href: "https://wiki.t2linux.org/distributions/fedora/home/",
         },
         {
           src: "arch.svg",

@@ -56,9 +56,9 @@
           />
 
           <img
-            src="../assets/screenshots/mbp-16-arch.webp"
+            src="../assets/screenshots/mbp-16-fedora.webp"
             class="transition-all duration-200 ease-in-out"
-            v-show="currItem === 'manjaro'"
+            v-show="currItem === 'fedora'"
             width="1122"
             height="690"
             alt=""
@@ -66,9 +66,17 @@
 
           <div class="relative flex flex-row mt-1">
             <img
-              @mouseover="showItem('manjaro')"
-              src="../assets/icons/distributions/manjaro.svg"
-              class="Manjaro md:block OpacityHover"
+              @mouseover="showItem('ubuntu')"
+              src="../assets/icons/distributions/ubuntu.svg"
+              class="Ubuntu md:block OpacityHover"
+              alt=""
+              srcset=""
+            />
+
+            <img
+              @mouseover="showItem('fedora')"
+              src="../assets/icons/distributions/fedora.svg"
+              class="Fedora md:block OpacityHover"
               alt=""
               srcset=""
             />
@@ -79,19 +87,11 @@
               class="Arch md:block OpacityHover"
               alt=""
             />
-            <img
-              @mouseover="showItem('ubuntu')"
-              src="../assets/icons/distributions/ubuntu.svg"
-              class="Ubuntu md:block OpacityHover"
-              alt=""
-              sizes=""
-              srcset=""
-            />
           </div>
           <div class="flex flex-row justify-center md:hidden">
             <img
-              @mouseover="showItem('manjaro')"
-              src="../assets/icons/distributions/manjaro.svg"
+              @mouseover="showItem('Fedora')"
+              src="../assets/icons/distributions/fedora.svg"
               class="mr-3 opacity-80"
               alt=""
               srcset=""
@@ -205,7 +205,7 @@ export default {
   opacity: 0.8;
 }
 
-.Manjaro {
+.Fedora {
   position: relative;
   bottom: 10rem;
   left: 30rem;
@@ -223,6 +223,7 @@ export default {
   position: relative;
   bottom: 10rem;
   left: 30rem;
+  @apply mr-3;
 }
 
 @keyframes float {
