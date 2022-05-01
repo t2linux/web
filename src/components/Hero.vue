@@ -8,7 +8,7 @@
         >
         <div class="flex flex-col md:flex-row justify-center my-5 md:my-20">
           <a
-            class="StartButton mr-5"
+            class="StartButton mr-5 z-10"
             href="https://wiki.t2linux.org/"
             target="_blank"
           >
@@ -16,7 +16,7 @@
           </a>
 
           <a
-            class="GithubButton"
+            class="GithubButton z-10"
             href="https://github.com/t2linux"
             target="_blank"
           >
@@ -117,17 +117,17 @@
     </div>
     <img
       src="../assets/background/shapes/torus.png"
-      class="Shape1 hidden md:block"
+      class="Shape1 hidden md:block z-0"
       alt=""
     />
     <img
       src="../assets/background/shapes/cube.png"
-      class="Shape2 hidden md:block"
+      class="Shape2 hidden md:block z-0"
       alt=""
     />
     <img
       src="../assets/background/shapes/circle.png"
-      class="Shape3 hidden md:block"
+      class="Shape3 hidden md:block z-0"
       alt=""
     />
   </div>
