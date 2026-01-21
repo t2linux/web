@@ -1,0 +1,24 @@
+<svg width="206" height="206" viewBox="-3 -3 206 206" xmlns="http://www.w3.org/2000/svg">
+  <path d="M200 155
+           V32
+           A32 32 0 0 0 168 0
+           H32
+           A32 32 0 0 0 0 32
+           V168
+           A32 32 0 0 0 32 200
+           H168
+           A32 32 0 0 0 200 168"
+        fill="none" stroke="white" stroke-width="6"
+        stroke-linecap="round"/>
+
+  <rect x="197" y="152" width="6" height="6"
+      rx="2" ry="2"
+      fill="white"/>
+
+  <mask id="bite">
+    <rect width="100%" height="100%" fill="white"/>
+    <circle cx="115" cy="90" r="15" fill="black"/>
+  </mask>
+
+  <circle cx="100" cy="100" r="20" fill="white" mask="url(#bite)"/>
+</svg>
