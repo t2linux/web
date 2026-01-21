@@ -62,14 +62,14 @@
         </a>
         <a
           class="DiscordButton w-full"
-          href="https://discord.com/invite/68MRhQu"
+          href="https://matrix.to/#/#space:t2linux.org"
           target="_blank"
         >
           <img
-            src="../assets/icons/discord-wordmark.svg"
+            src="../assets/icons/matrix-wordmark.svg"
             alt=""
             srcset=""
-            class="m-auto"
+            class="m-auto matrix"
           />
         </a>
       </nav>
@@ -92,14 +92,14 @@
     <div class="md:block hidden">
       <a
         class="DiscordButton"
-        href="https://discord.com/invite/68MRhQu"
+        href="https://matrix.to/#/#space:t2linux.org"
         target="_blank"
       >
         <img
-          src="../assets/icons/discord-wordmark.svg"
+          src="../assets/icons/matrix-wordmark.svg"
           alt=""
           srcset=""
-          class="m-auto w-auto"
+          class="m-auto w-auto matrix"
         />
       </a>
     </div>
@@ -132,9 +132,9 @@ export default {
 
 <style>
 .DiscordButton {
-  @apply w-full rounded flex transition-all ease-in-out duration-200 bg-neutral hover:bg-neutral-600 my-2 md:my-0;
+  @apply w-full rounded flex transition-all ease-in-out bg-white duration-200 my-2 md:my-0;
   height: 50px;
-  width: 155px;
+  width: 120px;
 }
 
 .NavItem {
@@ -160,5 +160,9 @@ export default {
 .dropdown-leave-to {
   opacity: 0 !important;
   transform: translateY(30px) !important;
+}
+
+.matrix {
+  filter: invert(1)
 }
 </style>

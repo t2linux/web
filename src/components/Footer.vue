@@ -17,13 +17,13 @@
         <div class="flex BodyText items-center">
           <a
             target="_blank"
-            href="https://discord.com/invite/68MRhQu"
+            href="https://matrix.to/#/#space:t2linux.org"
             class="flex items-center mx-4 linkhover my-2 md:my-0"
             ><img
-              src="../assets/icons/discord.svg"
-              class="mr-2"
+              src="../assets/icons/matrix.svg"
+              class="mr-2 matrix"
               alt=""
-            />Discord</a
+            />Matrix</a
           >
           <a
             target="_blank"
@@ -56,5 +56,9 @@ export default {};
 
 .linkhover:hover {
   @apply opacity-70;
+}
+
+.matrix {
+  filter: invert(1);
 }
 </style>
