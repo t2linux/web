@@ -41,11 +41,11 @@
             >
             <a
               class="DiscordButton mt-3 w-auto md:w-1/2"
-              href="https://discord.com/invite/68MRhQu"
+              href="https://matrix.to/#/#space:t2linux.org"
               target="_blank"
             >
-              <span class="m-auto text-lg text-white text-semibold"
-                >Join us on Discord</span
+              <span class="m-auto text-lg text-black text-semibold"
+                >Join us on Matrix</span
               >
             </a>
           </div>
