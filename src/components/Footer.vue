@@ -5,7 +5,7 @@
         <div class="flex flex-col">
           <span
             class="BodyText text-left cursor-pointer hover:opacity-80 transition-all duration-200 ease-in-out my-0"
-            >© 2021 t2linux.org</span
+            >© 2021-2026 t2linux.org</span
           >
           <span
             class="BodyText text-left cursor-pointer hover:opacity-80 transition-all duration-200 ease-in-out my-0"
