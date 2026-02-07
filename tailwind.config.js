@@ -1,8 +1,8 @@
 module.exports = {
-  purge: [
+  content: [
     './src/**/*.vue'
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media',
   theme: {
     extend: {
       fontSize: {
