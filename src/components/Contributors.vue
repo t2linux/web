@@ -99,6 +99,7 @@ export default {
 </script>
 
 <style>
+@reference "../styles/index.scss";
 .ContributorsCard {
   @apply p-7 md:p-12 rounded;
   background-color: rgba(46, 46, 46, 1);

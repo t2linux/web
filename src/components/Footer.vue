@@ -46,6 +46,7 @@ export default {};
 </script>
 
 <style>
+@reference "../styles/index.scss";
 .footer {
   @apply flex flex-col md:flex-row justify-center md:justify-between items-center align-middle;
 }

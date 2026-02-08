@@ -152,6 +152,7 @@ export default {
 </script>
 
 <style>
+@reference "../styles/index.scss";
 .Herotext {
   @apply text-center text-white font-bold block text-xl md:text-hero md:leading-hero;
 }

@@ -55,6 +55,7 @@ export default {
 </script>
 
 <style>
+@reference "../styles/index.scss";
 .markdown {
   @apply md:px-52 font-light;
 }

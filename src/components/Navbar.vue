@@ -131,6 +131,7 @@ export default {
 </script>
 
 <style>
+@reference "../styles/index.scss";
 .DiscordButton {
   @apply w-full rounded flex transition-all ease-in-out bg-white duration-200 my-2 md:my-0;
   height: 50px;

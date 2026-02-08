@@ -67,6 +67,7 @@ export default {
 </script>
 
 <style>
+@reference "../styles/index.scss";
 .TitleText {
   @apply text-center text-white font-bold block text-xl md:text-section md:leading-section;
 }
