@@ -1,32 +1,32 @@
 <template>
-  <Navbar />
-  <Hero />
-  <Distributions />
-  <Devices />
-  <Installation />
-  <Contributors />
-  <Footer />
+  <NavbarComponent />
+  <HeroComponent />
+  <DistributionsComponent />
+  <DevicesComponent />
+  <InstallationComponent />
+  <ContributorsComponent />
+  <FooterComponent />
 </template>
 
 <script>
-import Hero from "./components/Hero.vue";
-import Navbar from "./components/Navbar.vue";
-import Distributions from "./components/Distributions.vue";
-import Devices from "./components/Devices.vue";
-import Installation from "./components/Installation.vue";
-import Contributors from "./components/Contributors.vue";
-import Footer from "./components/Footer.vue";
+import HeroComponent from "./components/HeroComponent.vue";
+import NavbarComponent from "./components/NavbarComponent.vue";
+import DistributionsComponent from "./components/DistributionsComponent.vue";
+import DevicesComponent from "./components/DevicesComponent.vue";
+import InstallationComponent from "./components/InstallationComponent.vue";
+import ContributorsComponent from "./components/ContributorsComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
   name: "App",
   components: {
-    Navbar,
-    Hero,
-    Distributions,
-    Devices,
-    Installation,
-    Contributors,
-    Footer,
+    NavbarComponent,
+    HeroComponent,
+    DistributionsComponent,
+    DevicesComponent,
+    InstallationComponent,
+    ContributorsComponent,
+    FooterComponent,
   },
 };
 </script>

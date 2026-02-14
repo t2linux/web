@@ -11,7 +11,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 mt-5 md:mt-14">
         <a
           v-for="item in distributions"
-          v-bind:key="item.index"
+          :key="item.index"
           :href="item.href"
         >
           <div class="DistroCard">
@@ -20,7 +20,7 @@
                 :src="require(`../assets/icons/distributions/` + item.src)"
                 class="w-8 h-8 md:w-auto md:h-auto"
                 alt=""
-              />
+              >
               <span class="DistroName">{{ item.name }}</span>
             </div>
             <div>
@@ -28,7 +28,7 @@
                 src="../assets/icons/redirect.svg"
                 class="hover:opacity-70 transition-all duration-200 ease-in-out"
                 :alt="'Icon for ' + item.name"
-              />
+              >
             </div>
           </div>
         </a>

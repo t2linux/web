@@ -16,43 +16,49 @@
     "
   >
     <div class="flex justify-between md:w-auto text-lg text-gray-700">
-      <a href="/"
-        ><img src="../assets/icons/t2linux.webp" class="h-10 max-w-none w-10" alt="t2linux icon"
-      /></a>
+      <a href="/"><img
+        src="../assets/icons/t2linux.webp"
+        class="h-10 max-w-none w-10"
+        alt="t2linux icon"
+      ></a>
 
       <button
         class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
         @click="open = !open"
       >
-        <svg fill="gray" viewBox="0 0 20 20" class="w-6 h-6">
+        <svg
+          fill="gray"
+          viewBox="0 0 20 20"
+          class="w-6 h-6"
+        >
           <path
             v-if="!open"
             fill-rule="evenodd"
             class="text-neutral-200"
             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
             clip-rule="evenodd"
-          ></path>
+          />
           <path
             v-if="open"
             fill-rule="evenodd"
             class="text-neutral-200"
             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
             clip-rule="evenodd"
-          ></path>
+          />
         </svg>
       </button>
     </div>
 
     <transition name="dropdown">
       <nav
+        v-if="open"
         :class="open ? 'flex Navmenubg rounded-lg px-3 mt-2' : 'hidden'"
         class="flex-col flex-grow py-3"
-        v-if="open"
       >
         <a
-          class="NavbarMobileItem text-neutral-200"
           v-for="item in arr"
-          v-bind:key="item.index"
+          :key="item.index"
+          class="NavbarMobileItem text-neutral-200"
           :href="item.href"
           :target="
             item.href === '/' || item.href === '#Installation' ? '' : '_blank'
@@ -70,16 +76,16 @@
             alt=""
             srcset=""
             class="m-auto matrix"
-          />
+          >
         </a>
       </nav>
     </transition>
 
     <span class="w-full justify-center hidden md:flex ml-0 lg:ml-32">
       <a
-        class="NavItem"
         v-for="item in arr"
-        v-bind:key="item.index"
+        :key="item.index"
+        class="NavItem"
         :href="item.href"
         :target="
           item.href === '/' || item.href === '#Installation' ? '' : '_blank'
@@ -100,7 +106,7 @@
           alt=""
           srcset=""
           class="m-auto w-auto matrix"
-        />
+        >
       </a>
     </div>
   </div>

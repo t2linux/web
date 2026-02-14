@@ -1,15 +1,16 @@
 <template>
-  <div class="max-w-full mx-auto flex justify-center" id="Installation">
+  <div
+    id="Installation"
+    class="max-w-full mx-auto flex justify-center"
+  >
     <div class="py-14 md:py-40 px-5">
       <div>
         <span class="TitleText">Installation Roadmap</span>
       </div>
       <div class="flex flex-col md:flex-row justify-center">
-        <span class="BodyText w-full md:w-2/3"
-          >This article is meant to guide users through the wiki by giving an
+        <span class="BodyText w-full md:w-2/3">This article is meant to guide users through the wiki by giving an
           overview over the required steps to get to a working
-          installation.</span
-        >
+          installation.</span>
       </div>
 
       <div
@@ -24,7 +25,11 @@
           md:w-4/5
         "
       >
-        <div v-html="markdownToHtml" class="markdown"></div>
+        <div
+          class="markdown"
+        >
+          {{ markdownToHtml }}
+        </div>
       </div>
     </div>
   </div>

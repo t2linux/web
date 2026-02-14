@@ -18,7 +18,7 @@
       >
         <div
           v-for="item in machines"
-          v-bind:key="item.index"
+          :key="item.index"
           class="flex flex-col justify-center items-center text-center"
         >
           <img
@@ -26,7 +26,7 @@
             alt=""
             class="w-7/12 h-7/12 md:w-36 md:h-36"
             srcset=""
-          />
+          >
           <span class="text-white text-base md:text-2xl mt-5">{{
             item.name
           }}</span>
