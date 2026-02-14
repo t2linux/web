@@ -5,8 +5,7 @@
         <div class="flex flex-col">
           <span
             class="BodyText text-left cursor-pointer hover:opacity-80 transition-all duration-200 ease-in-out my-0"
-            >© 2021-2026 t2linux.org</span
-          >
+          >© 2021-2026 t2linux.org</span>
           <span
             class="BodyText text-left cursor-pointer hover:opacity-80 transition-all duration-200 ease-in-out my-0"
           >
@@ -19,22 +18,20 @@
             target="_blank"
             href="https://matrix.to/#/#space:t2linux.org"
             class="flex items-center mx-4 linkhover my-2 md:my-0"
-            ><img
-              src="../assets/icons/matrix.svg"
-              class="mr-2 matrix"
-              alt=""
-            />Matrix</a
-          >
+          ><img
+            src="../assets/icons/matrix.svg"
+            class="mr-2 matrix"
+            alt=""
+          >Matrix</a>
           <a
             target="_blank"
             href="https://github.com/t2linux"
             class="flex items-center linkhover mx-4 my-2 md:my-0"
-            ><img
-              src="../assets/icons/github.svg"
-              class="mr-2"
-              alt=""
-            />Github</a
-          >
+          ><img
+            src="../assets/icons/github.svg"
+            class="mr-2"
+            alt=""
+          >Github</a>
         </div>
       </div>
     </div>
@@ -46,6 +43,7 @@ export default {};
 </script>
 
 <style>
+@reference "../styles/index.scss";
 .footer {
   @apply flex flex-col md:flex-row justify-center md:justify-between items-center align-middle;
 }

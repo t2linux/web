@@ -13,40 +13,35 @@
           <div>
             <div class="grid grid-cols-4 md:grid-cols-4 gap-5 md:gap-0 mb-3">
               <div
-                class="contributorLink"
                 v-for="entry in contributors"
-                v-bind:key="entry.index"
+                :key="entry.index"
+                class="contributorLink"
               >
-                <a :href="entry.href" target="_blank">
+                <a
+                  :href="entry.href"
+                  target="_blank"
+                >
                   <img
                     class="w-auto h-auto md:w-24 md:h-24 rounded-full"
                     :src="entry.img"
                     :alt="'Link to ' + entry.href"
-                  />
+                  >
                 </a>
               </div>
             </div>
-            <span class="text-white text-base md:text-2xl"
-              >and many more...</span
-            >
+            <span class="text-white text-base md:text-2xl">and many more...</span>
           </div>
 
           <div class="flex flex-col my-auto max-w-full md:max-w-lg">
-            <span class="text-base md:text-4xl text-white"
-              >Notable Contributors</span
-            >
-            <span class="sub"
-              >The t2linux project is a community effort of people with
-              knowledge in many different areas. You can help as well!</span
-            >
+            <span class="text-base md:text-4xl text-white">Notable Contributors</span>
+            <span class="sub">The t2linux project is a community effort of people with
+              knowledge in many different areas. You can help as well!</span>
             <a
               class="DiscordButton mt-3 w-auto md:w-1/2"
               href="https://matrix.to/#/#space:t2linux.org"
               target="_blank"
             >
-              <span class="m-auto text-lg text-black text-semibold"
-                >Join us on Matrix</span
-              >
+              <span class="m-auto text-lg text-black text-semibold">Join us on Matrix</span>
             </a>
           </div>
         </div>
@@ -99,6 +94,7 @@ export default {
 </script>
 
 <style>
+@reference "../styles/index.scss";
 .ContributorsCard {
   @apply p-7 md:p-12 rounded;
   background-color: rgba(46, 46, 46, 1);

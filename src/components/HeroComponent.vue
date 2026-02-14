@@ -2,10 +2,8 @@
   <div class="w-full mx-auto flex justify-center pb-0 md:pb-0">
     <div class="pb-0 md:pb-2 px-5">
       <div class="py-3 md:pt-40">
-        <span class="Herotext"
-          >Linux support for Apple devices <br />
-          with the T2 security chip</span
-        >
+        <span class="Herotext">Linux support for Apple devices <br>
+          with the T2 security chip</span>
         <div class="flex flex-col md:flex-row justify-center my-5 md:my-20">
           <a
             class="StartButton mr-5 z-10"
@@ -28,89 +26,89 @@
           class="pt-5 md:pt-14 relative transition-all duration-200 ease-in-out"
         >
           <img
+            v-show="currItem === 'default'"
             src="../assets/screenshots/mbp-16-ubuntu.webp"
             class="transition-all duration-200 ease-in-out"
             alt=""
-            v-show="currItem === 'default'"
             width="1122"
             height="690"
             srcset=""
-          />
+          >
 
           <img
+            v-show="currItem === 'ubuntu'"
             src="../assets/screenshots/mbp-16-ubuntu.webp"
             class="transition-all duration-200 ease-in-out"
-            v-show="currItem === 'ubuntu'"
             width="1122"
             height="690"
             alt=""
-          />
+          >
 
           <img
+            v-show="currItem === 'arch'"
             src="../assets/screenshots/mbp-16-arch.webp"
             class="transition-all duration-200 ease-in-out"
-            v-show="currItem === 'arch'"
             width="1122"
             height="690"
             alt=""
-          />
+          >
 
           <img
+            v-show="currItem === 'fedora'"
             src="../assets/screenshots/mbp-16-fedora.webp"
             class="transition-all duration-200 ease-in-out"
-            v-show="currItem === 'fedora'"
             width="1122"
             height="690"
             alt=""
-          />
+          >
 
           <div class="relative flex flex-row mt-1">
             <img
-              @mouseover="showItem('ubuntu')"
               src="../assets/icons/distributions/ubuntu.svg"
               class="Ubuntu md:block OpacityHover"
               alt=""
               srcset=""
-            />
+              @mouseover="showItem('ubuntu')"
+            >
 
             <img
-              @mouseover="showItem('fedora')"
               src="../assets/icons/distributions/fedora.svg"
               class="Fedora md:block OpacityHover"
               alt=""
               srcset=""
-            />
+              @mouseover="showItem('fedora')"
+            >
 
             <img
-              @mouseover="showItem('arch')"
               src="../assets/icons/distributions/arch.svg"
               class="Arch md:block OpacityHover"
               alt=""
-            />
+              @mouseover="showItem('arch')"
+            >
           </div>
           <div class="flex flex-row justify-center md:hidden">
             <img
-              @mouseover="showItem('Fedora')"
               src="../assets/icons/distributions/fedora.svg"
               class="mr-3 opacity-80"
               alt=""
               srcset=""
-            />
+              @mouseover="showItem('Fedora')"
+            >
 
             <img
-              @mouseover="showItem('arch')"
               src="../assets/icons/distributions/arch.svg"
               class="mr-3 opacity-80"
               alt=""
-            />
+              @mouseover="showItem('arch')"
+            >
             <img
-              @mouseover="showItem('ubuntu')"
               src="../assets/icons/distributions/ubuntu.svg"
               class="opacity-80"
               alt=""
               sizes=""
               srcset=""
-            />
+              @mouseover="showItem('ubuntu')"
+            >
           </div>
         </div>
       </div>
@@ -119,17 +117,17 @@
       src="../assets/background/shapes/torus.png"
       class="Shape1 hidden md:block z-0"
       alt=""
-    />
+    >
     <img
       src="../assets/background/shapes/cube.png"
       class="Shape2 hidden md:block z-0"
       alt=""
-    />
+    >
     <img
       src="../assets/background/shapes/circle.png"
       class="Shape3 hidden md:block z-0"
       alt=""
-    />
+    >
   </div>
 </template>
 
@@ -140,18 +138,19 @@ export default {
       currItem: "default",
     };
   },
+  mounted() {
+    console.log(this.currItem);
+  },
   methods: {
     showItem: function(item) {
       this.currItem = item;
     },
   },
-  mounted() {
-    console.log(this.currItem);
-  },
 };
 </script>
 
 <style>
+@reference "../styles/index.scss";
 .Herotext {
   @apply text-center text-white font-bold block text-xl md:text-hero md:leading-hero;
 }
