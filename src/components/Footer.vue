@@ -27,6 +27,16 @@
           >
           <a
             target="_blank"
+            href="https://discord.com/invite/68MRhQu"
+            class="flex items-center mx-4 linkhover my-2 md:my-0"
+            ><img
+              src="../assets/icons/discord.svg"
+              class="mr-2"
+              alt=""
+            />Discord</a
+          >
+          <a
+            target="_blank"
             href="https://github.com/t2linux"
             class="flex items-center linkhover mx-4 my-2 md:my-0"
             ><img

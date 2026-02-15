@@ -61,7 +61,7 @@
           {{ item.title }}
         </a>
         <a
-          class="DiscordButton w-full"
+          class="MatrixButton w-full"
           href="https://matrix.to/#/#space:t2linux.org"
           target="_blank"
         >
@@ -70,6 +70,18 @@
             alt=""
             srcset=""
             class="m-auto matrix"
+          />
+        </a>
+        <a
+          class="DiscordButton w-full"
+          href="https://discord.com/invite/68MRhQu"
+          target="_blank"
+        >
+          <img
+            src="../assets/icons/discord-wordmark.svg"
+            alt=""
+            srcset=""
+            class="m-auto"
           />
         </a>
       </nav>
@@ -89,9 +101,9 @@
       </a>
     </span>
 
-    <div class="md:block hidden">
+    <div class="hidden md:flex items-center gap-3">
       <a
-        class="DiscordButton"
+        class="MatrixButton"
         href="https://matrix.to/#/#space:t2linux.org"
         target="_blank"
       >
@@ -100,6 +112,18 @@
           alt=""
           srcset=""
           class="m-auto w-auto matrix"
+        />
+      </a>
+      <a
+        class="DiscordButton"
+        href="https://discord.com/invite/68MRhQu"
+        target="_blank"
+      >
+        <img
+          src="../assets/icons/discord-wordmark.svg"
+          alt=""
+          srcset=""
+          class="m-auto w-auto"
         />
       </a>
     </div>
@@ -131,8 +155,14 @@ export default {
 </script>
 
 <style>
-.DiscordButton {
+.MatrixButton {
   @apply w-full rounded flex transition-all ease-in-out bg-white duration-200 my-2 md:my-0;
+  height: 50px;
+  width: 120px;
+}
+
+.DiscordButton {
+  @apply w-full rounded flex transition-all ease-in-out duration-200 bg-neutral hover:bg-neutral-600 my-2 md:my-0;
   height: 50px;
   width: 120px;
 }
